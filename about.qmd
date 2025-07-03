@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This project was created for [Kane's Data Science Bootcamp](https://bootcamp.davidkane.info/).
