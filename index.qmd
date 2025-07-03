@@ -15,36 +15,12 @@ library(RColorBrewer)
 ```
 
 
-
-```{r}
-#| message: false
-# Variable for percentage of bachelor's degree or higher (ACS 5-year)
-# B15003_022 to B15003_025 represent bachelor's or higher education levels
-# B15003_001 is total population age 25+
-
-x <- get_acs(
-  geography = "tract",
-  variables = c(total = "B15003_001", 
-                bachelor = "B15003_022", 
-                masters = "B15003_023",
-                professional = "B15003_024", 
-                doctorate = "B15003_025"),
-  county = "Los Angeles",
-  state = "CA",
-  year = 2022,
-  geometry = TRUE,
-  output = "wide"
-) |> 
-  mutate(pct_bachelors_or_higher = 100 * (
-    bachelorE + mastersE + professionalE + doctorateE) / totalE)
-
-
-
-```
-
-
 ```{r}
 #| warning: false
+
+# See get_data.R for where this data comes from
+x <- read_rds("la.rds")
+
 pal <- colorBin(
   palette = "YlGnBu",
   domain = x$pct_bachelors_or_higher,
