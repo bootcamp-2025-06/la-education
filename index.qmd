@@ -91,3 +91,5 @@ leaflet(data = x) %>%
     position = "bottomright"
   )
 ```
+
+This interactive map reveals striking geographic patterns in educational attainment across Los Angeles County's census tracts. The data shows a clear coastal-inland divide, with the highest concentrations of residents holding bachelor's degrees or higher (shown in dark blue, 70-100%) clustered along affluent coastal and Westside communities like Manhattan Beach, Redondo Beach, and areas near Santa Monica. The map also highlights educated enclaves in the foothills and northern parts of the county, likely including areas like Pasadena and parts of the San Fernando Valley. In stark contrast, large swaths of central and eastern LA County display much lower educational attainment levels (shown in yellow and light green, 0-40%), particularly in areas that correspond to historically working-class and immigrant communities. This geographic distribution of educational attainment reflects broader socioeconomic patterns in LA County, where proximity to the coast, employment centers, and historic investment in neighborhoods correlates strongly with higher levels of college education among residents.
